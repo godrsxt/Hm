@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #020617;
+  font-family: sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#webgl-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+#ui-layer {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Sits on top of the 3D canvas */
+}
+
+#scan-btn {
+  padding: 15px 30px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+#scan-btn:active {
+  background: #00ffff;
+  color: black;
+}
