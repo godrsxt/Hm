@@ -1,0 +1,6 @@
+{
+  "appId": "com.mx.godui",
+  "appName": "MxGodUI",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
